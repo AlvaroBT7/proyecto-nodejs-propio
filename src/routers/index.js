@@ -13,7 +13,7 @@ router.use("/cursos/plumbering", routerPlumbering);
 
 router.get("/", (req, res) => {
   return res.status(200).render("index.ejs", {
-    title: "Welcome back"
+    title: "Welcome back 🙃"
   });
 })
 

@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: #111;
+    background: radial-gradient(#fbf7ff, #b7bfd7);
+    height: 100vh;
 }
 
 body * {
@@ -17,8 +18,10 @@ body * {
 
 .index-main {
     display: flex;
-    flex-flow: nowrap row;
+    flex-flow: wrap row;
     justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 
 .index-title-container {
@@ -26,7 +29,40 @@ body * {
     flex-flow: nowrap row;
     justify-content: center;
     align-items: center;
-    height: 300px;
+}
+
+.index-title {
+    color: #333;
+    min-width: 50px;
+    margin: 0 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    overflow: auto;
+}
+
+.index-button-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.index-button {
+    color: #fff;
+    background-color: rgb(35, 97, 255);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
+}
+
+.index-button:hover {
+    transform: scale(1.03, 1.03);
+    box-shadow: 0 0 30px 5px rgba(0, 68, 255, 0.25);
 }
 
 .pro-title {
