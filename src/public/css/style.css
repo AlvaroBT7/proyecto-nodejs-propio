@@ -1,0 +1,55 @@
+* {
+    font-family: "Cascadia Code", "jetBrains Mono", "Consolas", "Lucida Console", sans-serif;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+body * {
+    color: #fff;
+}
+
+.index-main {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+}
+
+.index-title-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.pro-title {
+    color: #fff;
+    font-size: 35px;
+}
+
+.pro-main {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+}
+
+.pro-list-container {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #111;
+}
+
+.por-li {
+    color: #fff;
+    font-size: 35px;
+}
