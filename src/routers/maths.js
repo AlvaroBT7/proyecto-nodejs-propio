@@ -1,7 +1,6 @@
-import express from "express";
 import { Router } from "express";
 import infoCursos from "../public/json/cursos.js";
-const maths = infoCursos.maths;
+const { maths } = infoCursos;
 const router = Router();
 
 const buildObjArr = arr => {
