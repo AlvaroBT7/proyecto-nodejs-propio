@@ -1,12 +1,11 @@
 {
-  "name": "proyecto-de-repsaso",
+  "name": "prueba",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "description": "proyecto de prueba",
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",

@@ -1,18 +1,23 @@
 import express from "express";
-import routers from "./routers/index.js";
-import { dirname, join } from "path";
+import bodyParser from "body-parser";
+import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import router from "./routers/index.js";
 
-// getting dynamic path location
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
-// app settings
 const app = express();
-app.set("views", join(__dirname, "views"));
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// express app settings
+
+// middleware body-parse configuration
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+// view engine configuration
 app.set("view engine", "ejs");
-app.use("/", routers);
+app.set("views", join(__dirname, "views"));
+// routers configuration
+app.use("/", router);
+// static / public folder confiruguration
 app.use("/", express.static(join(__dirname, "public")));
-app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

@@ -1,17 +1,16 @@
-POST  http://localhost:3000/cursos HTTP/1.1
-Content-Type: aplication/json
-
-{
-    "id": 55,
-    "title": "hola"
-}
+GET http://localhost:3000?id=5 HTTP/1.1
 
 ###
 
-PUT  http://localhost:3000/cursos HTTP/1.1
-Content-Type: aplication/json
+POST http://localhost:3000 HTTP/1.1
+Content-Type: application/json
 
 {
-    "id": 55,
-    "title": "hola"
+    "name": "Alvaro",
+    "surname": "Barrero",
+    "age": 15,
+    "adress": {
+        "country": "Spain",
+        "city": "Madrid"
+    }
 }
